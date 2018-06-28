@@ -59,8 +59,16 @@
             <Col span='6'  class="col-con">
               <Table border :columns="columns1" :data="data1" :show-header=false></Table>
             </Col>
-            <Col span='12'  class="col-con">
-              <Table border :columns="columns2" :data="data2" :show-header=false></Table>
+
+            <Col span='24'  class="col-con">
+            <Row >
+            <Col span='12' class="col-con">
+              <Table border :columns="columns1" :data="data1" :show-header=false></Table>
+            </Col>
+            <Col span='12' class="col-con">
+              <Table border :columns="columns1" :data="data1" :show-header=false></Table>
+            </Col>
+            </Row>
             </Col>
         </Row>
             </Card>
@@ -140,13 +148,13 @@ export default {
       ],
       data2: [
         {
-          col1: '车辆品牌：',
+          col1: '违反行为：',
           col2: '福克斯',
           col3: '福克斯',
           col4: '福克斯'
         },
         {
-          col1: '车辆品牌：',
+          col1: '超速比',
           col2: '福克斯',
           col3: '福克斯',
           col4: '福克斯'
